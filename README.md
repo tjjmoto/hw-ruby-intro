@@ -2,11 +2,9 @@
 
 This homework is made up of two sections comprised of multiple parts and gives some basic practice in Ruby as well as getting you accustomed to making testing a regular part of your workflow.
 
-GET STARTED EARLY it’s a **LONG **assignment. Ask lots of questions along the way!! We will be working through this material in lecture, but you can get started by reading Chapter 3 and trying out some of the tutorials listed at the end of this assignment. 
+GET STARTED EARLY it’s a **LONG **assignment. Ask lots of questions along the way!! We are working through this material in lecture, but you can get started by reading Chapter 3 and trying out some of the tutorials listed at the end of this assignment. 
 
 REMEMBER that each Homework assignment (there are 2) are worth 7% of your overall grade, and the homeworks are here to help you get started, set up your environment, and learn the basic tools that you will need for your project.  Step one: “learn” Ruby- easy right? No.  Jump in as soon as possible and make sure you understand everything you’re doing along the way- ask if you don’t! Use Basecamp to your advantage!
-
-Good luck!
 
 ## **Learning Goals**
 
@@ -20,6 +18,10 @@ After completing this assignment, you will know how to:
 
 
 ## **Setup**
+
+You have two setup options: feel free to use one or both (with good github usage so you can coordinate your code!)
+
+The first option is "remote"- with this option, you will be using a docker container hosted on the UCCS servers. You will need to have internet access and connect to the VPN to use it. The second option is a local install of Docker with the same environment installed. 
 
 To get to your coding environment, go to http://localhost after your docker container is up and running.
 
@@ -393,7 +395,7 @@ Make sure you are in `/root/environment/homework/` - you can verify by running `
 
 On the github website (<code>[https://github.com/UCCS-CS300/](https://github.com/UCCS-CS3300-Spring2017/instructor_test_account.git)</code>YOURUCCSUSERNAME), you should see two folders: <code>hw-ruby-intro</code> and <code>hw-ruby-more, </code>where each can be opened and contain your modified code.
 
-_Note: Github will be covered much more later in class- for now, this is all you need. Understand what each command means and read all output!_
+_Note: Github will possibly be covered in the class if needed- for now, this is all you need. Understand what each command means and READ ALL OUTPUT!_
 
 * If you mistype the address, follow the information here to correct the address: https://help.github.com/articles/changing-a-remote-s-url/  
 
@@ -440,4 +442,4 @@ For Ruby tutorials, check out:
 *   [Ruby Style Guide](https://github.com/styleguide/ruby)
 *   [Ruby](http://www.zenspider.com/Languages/Ruby/QuickRef.html) cheat sheet
 
-If you find other good resources, please post a note to Piazza!
+If you find other good resources, please post a note to Basecamp!
