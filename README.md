@@ -27,8 +27,8 @@ If you would like to use Docker natively, please see the instructions here: http
 To get to your coding environment, go to http://localhost after your docker container is up and running.
 
 If you want to use the remote environment hosted on UCCS servers:
-Student Editor URL: editor.{yourUCCSUsername}-4-advse-4300.uccs.devedu.io
-Student App URL: app.{yourUCCSUsername}-4-advse-4300.uccs.devedu.io
+Student Editor URL: http://editor.{yourUCCSUsername}-4-advse-4300.uccs.devedu.io
+Student App URL: http://app.{yourUCCSUsername}-4-advse-4300.uccs.devedu.io
 The username is your UCCS username (i.e. kwalcott) password is yourstudent ID number. The Editor link is what you will use for coding. The App link is what you'll use for execution. Please note that you will be deploying your assignments and projects to Heroku as well, so consider the Student App URL as your private testing ground- NOT for submission. 
 
 Once you're in (in Docker or in the remote environment), open a terminal. In the upper left-hand corner, click on the hamburger (the 3 lines), View, Terminal. And you're set!
