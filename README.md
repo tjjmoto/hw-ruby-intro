@@ -21,11 +21,19 @@ After completing this assignment, you will know how to:
 
 You have two setup options: feel free to use one or both (with good github usage so you can coordinate your code!)
 
-The first option is "remote"- with this option, you will be using a docker container hosted on the UCCS servers. You will need to have internet access and connect to the VPN to use it. The second option is a local install of Docker with the same environment installed. 
+The first option is "remote"- with this option, you will be using a docker container hosted on the UCCS servers. You will need to have internet access and connect to the UCCS VPN to use it. The second option is a local install of Docker with the same environment installed. 
 
+If you would like to use Docker natively, please see the instructions here: https://canvas.uccs.edu/courses/131846/pages/using-docker-if-you-do-not-want-to-use-the-remote-environment There is a quick tutorial of how to use Docker on Canvas here: https://canvas.uccs.edu/courses/131846/pages/new-to-docker-helpful-commands. 
 To get to your coding environment, go to http://localhost after your docker container is up and running.
 
-To get started, open a terminal. In the upper left-hand corner, click on the hamburger (the 3 lines), View, Terminal. And you're set!
+If you want to use the remote environment hosted on UCCS servers:
+Student Editor URL: editor.{yourUCCSUsername}-4-advse-4300.uccs.devedu.io
+Student App URL: app.{yourUCCSUsername}-4-advse-4300.uccs.devedu.io
+The password is yourstudent ID number. 
+
+Once you're in (in Docker or in the remote environment), open a terminal. In the upper left-hand corner, click on the hamburger (the 3 lines), View, Terminal. And you're set!
+
+The environment provided is very bare bones, so adapt it to what you like- don't forget to do 'apt-get update'! The ruby and rails tools are pre-installed. 
 
 To work more fully from the terminal, install your editor of choice. For example: 
 `apt-get update && apt-get install vim` or `apt-get update && apt-get install emacs`. To set this editor as default for all applications, `export EDITOR=vi` or `export EDITOR=emacs`. 
