@@ -21,10 +21,7 @@ After completing this assignment, you will know how to:
 
 You have two setup options: feel free to use one or both (with good github usage so you can coordinate your code!)
 
-The first option is "remote"- with this option, you will be using a docker container hosted on the UCCS servers. You will need to have internet access and connect to the UCCS VPN to use it. The second option is a local install of Docker with the same environment installed. 
-
-If you would like to use Docker natively, please see the instructions here: https://canvas.uccs.edu/courses/131846/pages/using-docker-if-you-do-not-want-to-use-the-remote-environment There is a quick tutorial of how to use Docker on Canvas here: https://canvas.uccs.edu/courses/131846/pages/new-to-docker-helpful-commands. 
-To get to your coding environment, go to http://localhost after your docker container is up and running.
+The first option is "remote"- with this option, you will be using a docker container hosted on the UCCS servers. You will need to have internet access and connect to the UCCS VPN to use it- I recommend this option so that the TA and I can more easily help if things are going awry. The second option is a local install of Docker with the same environment installed. 
 
 If you want to use the remote environment hosted on UCCS servers (YOU MUST BE ON THE VPN TO CONNECT!!!!!):
 
@@ -32,7 +29,10 @@ Student Editor URL: http://editor.{yourUCCSUsername}-4-advse-4300.uccs.devedu.io
 
 Student App URL: http://app.{yourUCCSUsername}-4-advse-4300.uccs.devedu.io
 
-The username is your UCCS username (i.e. kwalcott) password is yourstudent ID number. The Editor link is what you will use for coding. The App link is what you'll use for execution. Please note that you will be deploying your assignments and projects to Heroku as well, so consider the Student App URL as your private testing ground- NOT for submission. 
+The username is your UCCS username (i.e. kwalcott) and the password is yourstudent ID number. The Editor link is what you will use for coding. The App link is what you'll use for execution. Please note that you will be deploying your assignments and projects to Heroku as well, so consider the Student App URL as your private testing ground- NOT for submission. 
+
+If you would like to use Docker natively, please see the instructions here: https://canvas.uccs.edu/courses/131846/pages/using-docker-if-you-do-not-want-to-use-the-remote-environment There is a quick tutorial of how to use Docker on Canvas here: https://canvas.uccs.edu/courses/131846/pages/new-to-docker-helpful-commands. 
+To get to your coding environment, go to http://localhost after your docker container is up and running.
 
 Once you're in (in Docker or in the remote environment), open a terminal. In the upper left-hand corner, click on the hamburger (the 3 lines), View, Terminal. And you're set!
 
