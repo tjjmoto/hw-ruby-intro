@@ -36,7 +36,7 @@ The username is your UCCS username (i.e. kwalcott) password is yourstudent ID nu
 
 Once you're in (in Docker or in the remote environment), open a terminal. In the upper left-hand corner, click on the hamburger (the 3 lines), View, Terminal. And you're set!
 
-The environment provided is very bare bones, so adapt it to what you like- don't forget to do 'apt-get update'! The ruby and rails tools are pre-installed. 
+The environment provided is very bare bones, so adapt it to what you like- don't forget to do `apt-get update`! The ruby and rails tools are pre-installed. 
 
 To work more fully from the terminal, install your editor of choice. For example: 
 `apt-get update && apt-get install vim` or `apt-get update && apt-get install emacs`. To set this editor as default for all applications, `export EDITOR=vi` or `export EDITOR=emacs`. 
