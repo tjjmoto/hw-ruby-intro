@@ -29,7 +29,7 @@ Student Editor URL: http://editor.{yourUCCSUsername}-4-advse-4300.uccs.devedu.io
 
 Student App URL: http://app.{yourUCCSUsername}-4-advse-4300.uccs.devedu.io
 
-The username is your UCCS username (i.e. kwalcott) and the password is yourstudent ID number. The Editor link is what you will use for coding. The App link is what you'll use for execution. Please note that you will be deploying your assignments and projects to Heroku as well, so consider the Student App URL as your private testing ground- NOT for submission. 
+The username is your UCCS username (i.e. kwalcott) and the password is your student ID number. The Editor link is what you will use for coding. The App link is what you'll use for execution. Please note that you will be deploying your assignments and projects to Heroku as well, so consider the Student App URL as your private testing ground- NOT for submission. 
 
 If you would like to use Docker natively, please see the instructions here: https://canvas.uccs.edu/courses/131846/pages/using-docker-if-you-do-not-want-to-use-the-remote-environment There is a quick tutorial of how to use Docker on Canvas here: https://canvas.uccs.edu/courses/131846/pages/new-to-docker-helpful-commands. 
 To get to your coding environment, go to http://localhost after your docker container is up and running.
