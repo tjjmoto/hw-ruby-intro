@@ -41,6 +41,11 @@ The environment provided is very bare bones, so adapt it to what you like- don't
 To work more fully from the terminal, install your editor of choice. For example: 
 `apt-get update && apt-get install vim` or `apt-get update && apt-get install emacs`. To set this editor as default for all applications, `export EDITOR=vi` or `export EDITOR=emacs`. 
 
+You will also need to set up your github keys- github no longer allows you to access using username and password via the terminal. 
+`ssh-keygen`
+Then `ls -al ~/.ssh` -- you should see `id_rsa.pub`
+Then do `cat ~/.ssh/id_rsa.pub` and copy output. In your github account, click on your account picture (top right side of the page), and go to Settings. From there, go to SSH and GPG keys and add a new SSH key. Paste your id_rsa.pub data there. 
+
 ## **Commit Work Frequently**
 
 As you edit your work, commit your code to your repository often!! After you have cloned your repository in the step below, you will be able to commit your code from anywhere within the homework directory to your private class repository. 
@@ -66,7 +71,7 @@ When running ANY git command, be sure to read all output for warnings/errors- of
 Clone your GitHub repo into a homework directory by running: 
 
 ```
-git clone https://github.com/UCCS-CS4300-5300/YOURUCCSUSERNAME_GOES_HERE.git homework
+git clone git@github.com:UCCS-CS4300-5300/YOURUCCSUSERNAME_GOES_HERE.git homework
 ```
 
 If you have done this correctly you should now see a `homework` directory under `/root/environment/homework/`.
@@ -83,7 +88,7 @@ then clone the skeleton code at [https://github.com/UCCSCS3300/hw-ruby-intro](ht
 git clone https://github.com/UCCSCS3300/hw-ruby-intro.git && rm -rf hw-ruby-intro/.git
 ```
 
-in the terminal of Cloud9 running inside of the docker container.  This creates a folder called `hw-ruby-intro`, which contains a skeleton for part 1 of your assignment, described below.
+in the terminal of Cloud9 (remote or running inside of the docker container).  This creates a folder called `hw-ruby-intro`, which contains a skeleton for part 1 of your assignment, described below.
 
 <!---[![IMAGE](https://media.giphy.com/media/QW460yejWnYkBr3qYN/giphy.gif)](https://gfycat.com/thoroughunrulyblacknorwegianelkhound.gif)-->
 ![IMAGE](https://raw.githubusercontent.com/UCCS-CS4300-5300/kwalcott-public/main/gettingStarted.png)
@@ -376,7 +381,7 @@ To submit your code and test writeup:
 
 
 
-1. **Push your code to github and include the TravisCI file.** (This is good practice for your later assignments when you’re working with your team too!)  Follow these instructions carefully!
+1. **Push your code to github** (This is good practice for your later assignments when you’re working with your team too!)  Follow these instructions carefully!
 
 ```
 cd /root/environment/homework/hw-ruby-intro
@@ -384,10 +389,7 @@ rm -rf .git
 cd /root/environment/homework/hw-ruby-more
 rm -rf .git
 cd /root/environment/homework/
-curl -L https://git.io/JtVnZ > .travis.yml
 ```
-<span style="color:red">UPDATED LINK FOR .travis.yml FILE!!! </span>
-
 
 Note that these two .git folders must be removed because they contain .git associations that are no longer needed (linking you to https://github.com/UCCSCS3300/ repos). Your private git repo is linked as a remote url in the homework folder's .git folder, which you can see by running `git remote -v` while in the homework folder. If you were to leave the .git folders in hw-ruby-intro or hw-ruby-more, the folders would be turned into submodules, which cannot be opened or viewed. 
 
@@ -404,17 +406,16 @@ Make sure you are in `/root/environment/homework/` - you can verify by running `
 *   When it asks for a username and password, that is your GITHUB username and password, not UCCS.  Read error messages, and double check that **all** of your files show up and are openable on the github website!
 *   Make sure your files are actually being added!  If files are missing, do a `git add `on the missing folders or files and then commit and push again. `git status `will also show you changes that are staged for commit. 
 
-On the github website (<code>[https://github.com/UCCS-CS300/](https://github.com/UCCS-CS3300-Spring2017/instructor_test_account.git)</code>YOURUCCSUSERNAME), you should see two folders: <code>hw-ruby-intro</code> and <code>hw-ruby-more, </code>where each can be opened and contain your modified code.
+On the github website (<code>[https://github.com/UCCS-CS4300-5300/](https://github.com/UCCS-CS4300-5300/instructor_test_account.git)</code>YOURUCCSUSERNAME), you should see two folders: <code>hw-ruby-intro</code> and <code>hw-ruby-more, </code>where each can be opened and contain your modified code.
 
 _Note: Github will possibly be covered in the class if needed- for now, this is all you need. Understand what each command means and READ ALL OUTPUT!_
 
 * If you mistype the address, follow the information here to correct the address: https://help.github.com/articles/changing-a-remote-s-url/  
 
 ** Note that you can also just type `git commit. `This will open up an editor if you set one up in the setup instructions. See Setup to install and set an editor. ([changeable](http://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-commits)- instructions here). Then it will show you everything that `git status` does and has you input your text that documents your change.  `-m` is a shortcut to bypass the text editor, BUT it also makes you more blind to what will be committed. 
+ 
 
-To make sure that your travis.yml committed properly, check it's output! Go to: https://travis-ci.com/github/UCCS-CS4300-5300/YOURUCCSUSERNAME The execution of your test runs will be shown and will be used in part for grading. 
-
-2. Submit your code on Canvas
+2. Submit your code on Canvas as an extra backup
 
 	```
 	cd /root/environment/homework/hw-ruby-intro`
