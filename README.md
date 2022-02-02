@@ -79,7 +79,7 @@ If you have done this correctly you should now see a `homework` directory under 
 Go to your `homework` directory (if not there already)
 
 ```
-cd homework
+cd /homework
 ```
 
 then clone the skeleton code at [https://github.com/UCCSCS3300/hw-ruby-intro](https://github.com/UCCSCS3300/hw-ruby-intro)  to your Cloud9 docker container. To do this, run:
@@ -110,7 +110,7 @@ To ensure you have the rspec gem installed, you need bundler and can then run bu
 
 
 ```
-$ cd homework/hw-ruby-intro
+$ cd /homework/hw-ruby-intro
 $ bundle install
 $ rspec spec/ or rspec spec/part#_spec.rb 
 ```
@@ -173,7 +173,7 @@ For this set of code, another skeleton is provided.  To get the skeleton code:
 
 
 ```
-cd /root/environment/homework 
+cd /homework 
 git clone https://github.com/UCCSCS3300/hw-ruby-more.git && rm -rf hw-ruby-more/.git
 cd hw-ruby-more
 ```
@@ -375,7 +375,7 @@ Finally, go to your text file and summarize the purpose of each rspec test (incl
 
 ---------------------------------------------------------------------------------------------------------
 
-You should have run tests on your assignment already, but we will additionally be checking your code for quality and “beauty”- not just working.  We will also run several additional tests for correctness- remember to check the weird corner cases!
+You should have run tests on your assignment already, but we will additionally be checking your code for quality and “beauty”- not just working.  We will also run several additional tests for correctness- remember to check the weird corner cases in your additional test cases! 
 
 To submit your code and test writeup:
 
