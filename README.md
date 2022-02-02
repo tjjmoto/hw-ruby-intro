@@ -25,7 +25,7 @@ The first option is "remote"- with this option, you will be using a docker conta
 
 If you want to use the remote environment hosted on UCCS servers (YOU MUST BE ON THE VPN TO CONNECT!!!!!):
 
-Student Editor URL: http://editor.{yourUCCSUsername}-4-advse-4300.uccs.devedu.io
+Student Editor URL: http://editor.{yourUCCSUsername}-4-advse-4300.uccs.devedu.io (for example: http://editor.kwalcott-4-advse-4300.uccs.devedu.io)
 
 Student App URL: http://app.{yourUCCSUsername}-4-advse-4300.uccs.devedu.io
 
