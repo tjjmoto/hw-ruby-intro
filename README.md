@@ -44,7 +44,7 @@ To work more fully from the terminal, install your editor of choice. For example
 You will also need to set up your github keys- github no longer allows you to access using username and password via the terminal. 
 `ssh-keygen`
 Then `ls -al ~/.ssh` -- you should see `id_rsa.pub`
-Then do `cat ~/.ssh/id_rsa.pub` and copy output. In your github account, click on your account picture (top right side of the page), and go to Settings. From there, go to SSH and GPG keys and add a new SSH key. Paste your id_rsa.pub data there. 
+Then do `cat ~/.ssh/id_rsa.pub` and copy output. In your github account, click on your account picture (top right side of the page), and go to Settings. From there, go to SSH and GPG keys and add a new SSH key. Paste your id_rsa.pub data there. NOTE: if you are using Docker on your machine AND the remote environment, you will need to set up keys in both!
 
 ## **Commit Work Frequently**
 
