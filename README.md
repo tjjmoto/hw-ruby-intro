@@ -323,7 +323,7 @@ Finally, go to your text file and summarize the purpose of each rspec test (incl
 
 ## ** **Specs: `spec/attr_accessor_with_history_spec.rb`
 
-In lecture (and book chapter 3.5), we see how attr_accessor uses metaprogramming to create getters and setters for object attributes on the fly.
+In lecture (and book chapter 2.3), we see how attr_accessor uses metaprogramming to create getters and setters for object attributes on the fly.
 
 Define a method attr_accessor_with_history that provides the same functionality as attr_accessor but also tracks every value the attribute has ever had:
 
