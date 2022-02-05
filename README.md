@@ -82,13 +82,13 @@ Go to your `homework` directory (if not there already)
 cd /homework
 ```
 
-then clone the skeleton code at [https://github.com/UCCSCS3300/hw-ruby-intro](https://github.com/UCCSCS3300/hw-ruby-intro)  to your Cloud9 docker container. To do this, run:
+then clone the skeleton code at [https://github.com/UCCSCS3300/hw-ruby-intro](https://github.com/UCCSCS3300/hw-ruby-intro)  to your container. To do this, run:
 
 ```
 git clone https://github.com/UCCSCS3300/hw-ruby-intro.git && rm -rf hw-ruby-intro/.git
 ```
 
-in the terminal of Cloud9 (remote or running inside of the docker container).  This creates a folder called `hw-ruby-intro`, which contains a skeleton for part 1 of your assignment, described below.
+in the terminal (remote or running inside of the docker container).  This creates a folder called `hw-ruby-intro`, which contains a skeleton for part 1 of your assignment, described below.
 
 <!---[![IMAGE](https://media.giphy.com/media/QW460yejWnYkBr3qYN/giphy.gif)](https://gfycat.com/thoroughunrulyblacknorwegianelkhound.gif)-->
 ![IMAGE](https://raw.githubusercontent.com/UCCS-CS4300-5300/kwalcott-public/main/gettingStarted.png)
@@ -427,7 +427,7 @@ _Note: Github will possibly be covered in the class if needed- for now, this is 
 	tar -czf yourUCCSname_hw1_part2.tar.gz *
 	```
 	
-You can now `right click` and download the files from Cloud9. 
+You can now `right click` and download the files for submission . 
 
 In Canvas, submit the two` tar.gz `files<code> <strong>AND</strong></code> the text/doc file wherein you describe the purpose of each added rspec test from Part 2. <strong>You should submit 3 files in total with your assignment on Canvas.  </strong>
 
