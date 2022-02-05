@@ -362,7 +362,7 @@ HINTS:
 
 *   Don't forget that the very first time the attribute receives a value, its history array will have to be initialized.
 *   An attribute's initial value is always nil by default, so if foo_history is referenced before foo has ever been assigned, the correct answer is nil, but after the first assignment to foo, the correct value for foo_history would be [nil].
-*   Don't forget that instance variables are referred to as @bar within getters and setters, as Section 3.5 of the ESaaS textbook explains.
+*   Don't forget that instance variables are referred to as @bar within getters and setters, as Section 2.3 of the ESaaS textbook explains.
 *   Although the existing attr_accessor can handle multiple arguments (e.g. attr_accessor :foo, :bar), your version just needs to handle a single argument.
 *   Your implementation should be general enough to work in the context of any class and for attributes of any (legal) variable name
 
