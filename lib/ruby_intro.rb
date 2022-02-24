@@ -26,30 +26,54 @@ def hello(name)
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  starts_with_const = s[0]
+  if (/[b-df-hj-np-tv-z]/i.match(starts_with_const)) == nil
+    return false
+  else
+    return true
+  end
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+  if (/^[0-1]+$/.match(s)).nil?
+    return false
+  end
+  a = s.to_i
+  if a % 4!=0
+    return false
+  end
+  return true
 end
 
 # Part 3
 
 class BookInStock
-attr_reader :price, :isbn
+  def initialize(isbn, price)  
 
-def constructor(isbn, price)
-  if isbn == ''
-    raise ArgumentError.new("The isbn must be filled out.")
-  end
-  self.isbn == isbn
-  if price <= 0
-    raise ArgumentError.new("The price must be greater than 0")
-  end
-  self.price = price.to_f
-end
+    def isbn= isbn 
+      @isbn = isbn
+    end
+    def price= price
+      @price = price
+    end
+    def isbn
+      @isbn
+    end
+    def price
+      @price
+    end
 
-def price_as_string
-  return sprintf "$"+"%.2f", self.price
-end
+    if isbn.empty?
+      raise ArgumentError.new("isbn can't be empty")
+    end
+    @isbn = isbn
+      if price <= 0
+      raise ArgumentError.new("price can't be less than 0")
+    end
+    @price = price
+  end
+
+  def price_as_string
+    return "$%.2f" % self.price
+  end 
 end
