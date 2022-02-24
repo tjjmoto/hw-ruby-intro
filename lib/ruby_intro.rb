@@ -3,21 +3,26 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  sum = 0
+  arr.each {|a| sum = sum +a}
+  return sum
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  sum(arr.sort.last(2))
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  if arr.empty? && n.zero?
+    return false 
+  end
+  arr.combination(2).any? {|a, b| a + b == n }
 end
 
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  return "Hello, " + name
 end
 
 def starts_with_consonant? s
@@ -31,5 +36,20 @@ end
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
+attr_reader :price, :isbn
+
+def constructor(isbn, price)
+  if isbn == ''
+    raise ArgumentError.new("The isbn must be filled out.")
+  end
+  self.isbn == isbn
+  if price <= 0
+    raise ArgumentError.new("The price must be greater than 0")
+  end
+  self.price = price.to_f
+end
+
+def price_as_string
+  return sprintf "$"+"%.2f", self.price
+end
 end
